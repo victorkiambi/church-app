@@ -1,4 +1,7 @@
 package com.app.church
 
-class ChurchApplication {
-}
+import android.app.Application
+import dagger.hilt.android.HiltAndroidApp
+
+@HiltAndroidApp
+class ChurchApplication: Application()

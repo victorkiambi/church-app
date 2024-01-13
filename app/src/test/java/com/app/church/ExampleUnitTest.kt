@@ -1,4 +1,4 @@
-package com.app.navigationtemplate
+package com.app.church
 
 import org.junit.Test
 

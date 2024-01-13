@@ -14,27 +14,9 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.sp
 import com.app.church.ui.theme.Primary
 
-@Composable
-fun HomeScreen(){
-    Column(
-        modifier = Modifier
-            .fillMaxSize()
-            .background(Primary)
-            .wrapContentSize(Alignment.Center)
-    ) {
-        Text(
-            text = "Home View",
-            fontWeight = FontWeight.Bold,
-            color = Color.Black,
-            modifier = Modifier.align(Alignment.CenterHorizontally),
-            textAlign = TextAlign.Center,
-            fontSize = 25.sp
-        )
-    }
-}
 
 @Composable
-fun ProfileScreen(){
+fun HomeScreen(){
     Column(
         modifier = Modifier
             .fillMaxSize()

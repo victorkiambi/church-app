@@ -1,5 +1,9 @@
 package com.app.church.components
 
+import android.os.Build
+import androidx.annotation.RequiresApi
+import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Icon
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
@@ -17,9 +21,9 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.app.church.navigation.NavigationItem
-import com.app.church.screens.HomeScreen
-import com.app.church.screens.ProfileScreen
-import com.app.church.screens.SettingsScreen
+import com.app.church.screens.calendar.CalendarScreen
+import com.app.church.screens.posts.PostsScreen
+import com.app.church.screens.userposts.UserPostsScreen
 import com.app.church.ui.theme.Primary
 
 @Composable
@@ -70,17 +74,20 @@ fun BottomNavigationBar(navController: NavController) {
     }
 }
 
+@RequiresApi(Build.VERSION_CODES.O)
 @Composable
-fun Navigation(navController: NavHostController){
-    NavHost(navController = navController, startDestination = NavigationItem.Home.route){
+fun Navigation(navController: NavHostController, innerPadding: PaddingValues){
+    NavHost(
+        modifier = androidx.compose.ui.Modifier.padding(innerPadding),
+        navController = navController, startDestination = NavigationItem.Home.route){
         composable(NavigationItem.Home.route){
-            HomeScreen()
+            PostsScreen()
         }
         composable(NavigationItem.Profile.route){
-            ProfileScreen()
+            UserPostsScreen()
         }
         composable(NavigationItem.Settings.route){
-            SettingsScreen()
+            CalendarScreen()
         }
     }
 }
