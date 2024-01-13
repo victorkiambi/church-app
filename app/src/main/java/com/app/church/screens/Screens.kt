@@ -1,4 +1,4 @@
-package com.app.navigationtemplate.screens
+package com.app.church.screens
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
@@ -12,7 +12,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.sp
-import com.app.navigationtemplate.ui.theme.Primary
+import com.app.church.ui.theme.Primary
 
 @Composable
 fun HomeScreen(){

@@ -1,4 +1,4 @@
-package com.app.navigationtemplate
+package com.app.church
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -13,16 +13,16 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.compose.rememberNavController
-import com.app.navigationtemplate.components.BottomNavigationBar
-import com.app.navigationtemplate.components.Navigation
-import com.app.navigationtemplate.components.TopBar
-import com.app.navigationtemplate.ui.theme.NavigationTemplateTheme
+import com.app.church.components.BottomNavigationBar
+import com.app.church.components.Navigation
+import com.app.church.components.TopBar
+import com.app.church.ui.theme.ChurchAppTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            NavigationTemplateTheme {
+            ChurchAppTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
@@ -52,7 +52,7 @@ fun MainScreen() {
 @Preview(showBackground = true)
 @Composable
 fun MainScreenPreview() {
-    NavigationTemplateTheme {
+    ChurchAppTheme {
         MainScreen()
     }
 }

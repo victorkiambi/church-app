@@ -1,6 +1,6 @@
-package com.app.navigationtemplate.navigation
+package com.app.church.navigation
 
-import com.app.navigationtemplate.R
+import com.app.church.R
 
 sealed class NavigationItem(var route:String, var icon: Int, var title: String){
     object Home : NavigationItem("home", R.drawable.ic_home, "Home")

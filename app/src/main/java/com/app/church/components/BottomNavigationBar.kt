@@ -1,4 +1,4 @@
-package com.app.navigationtemplate.components
+package com.app.church.components
 
 import androidx.compose.material3.Icon
 import androidx.compose.material3.NavigationBar
@@ -16,11 +16,11 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
-import com.app.navigationtemplate.navigation.NavigationItem
-import com.app.navigationtemplate.screens.HomeScreen
-import com.app.navigationtemplate.screens.ProfileScreen
-import com.app.navigationtemplate.screens.SettingsScreen
-import com.app.navigationtemplate.ui.theme.Primary
+import com.app.church.navigation.NavigationItem
+import com.app.church.screens.HomeScreen
+import com.app.church.screens.ProfileScreen
+import com.app.church.screens.SettingsScreen
+import com.app.church.ui.theme.Primary
 
 @Composable
 fun BottomNavigationBar(navController: NavController) {
